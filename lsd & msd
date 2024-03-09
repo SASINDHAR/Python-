@@ -1,0 +1,17 @@
+def find_lsd(number):
+    return number % 10
+
+def find_msd(number):
+    while number >= 10:
+        number //= 10
+    return number
+
+def main():
+    number = int(input("Enter a number: "))
+    lsd = find_lsd(number)
+    msd = find_msd(number)
+    print("Least Significant Digit:", lsd)
+    print("Most Significant Digit:", msd)
+
+if __name__ == "__main__":
+    main()
