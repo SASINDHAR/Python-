@@ -1,0 +1,18 @@
+def main():
+    # Create a dictionary representing a person's information
+    person = {
+        "name": "John",
+        "age": 30,
+        "gender": "Male",
+        "city": "New York"
+    }
+
+    # Find the length of the dictionary
+    dictionary_length = len(person)
+
+    # Display the dictionary and its length
+    print("Person's information:", person)
+    print("Length of the dictionary:", dictionary_length)
+
+if __name__ == "__main__":
+    main()
