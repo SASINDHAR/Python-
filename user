@@ -1,0 +1,22 @@
+def get_student_count():
+    student_count = int(input("Enter the number of student users: "))
+    return student_count
+
+def get_staff_count():
+    staff_count = int(input("Enter the number of staff users: "))
+    return staff_count
+
+def get_non_teaching_staff_count(staff_count):
+    non_teaching_staff_count = staff_count // 3
+    return non_teaching_staff_count
+
+def main():
+    student_count = get_student_count()
+    staff_count = get_staff_count()
+    non_teaching_staff_count = get_non_teaching_staff_count(staff_count)
+
+    total_users = student_count + staff_count + non_teaching_staff_count
+    print("\nTotal number of users in the college:", total_users)
+
+if __name__ == "__main__":
+    main()
