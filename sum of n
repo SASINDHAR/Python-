@@ -1,0 +1,20 @@
+def digit_sum(number):
+    # Keep calculating the sum of digits until it becomes a single digit
+    while number >= 10:
+        sum_of_digits = 0
+        while number > 0:
+            sum_of_digits += number % 10
+            number //= 10
+        number = sum_of_digits
+    return number
+
+def main():
+    n = int(input("Enter an N-digit number: "))
+    while n < 10:
+        print("Please enter a number with more than one digit.")
+        n = int(input("Enter an N-digit number: "))
+    result = digit_sum(n)
+    print("Sum of digits until single digit:", result)
+
+if __name__ == "__main__":
+    main()
