@@ -1,0 +1,11 @@
+import datetime
+
+def display_current_date_and_time():
+    current_date_and_time = datetime.datetime.now()
+    print("Current Date and Time:", current_date_and_time)
+
+def main():
+    display_current_date_and_time()
+
+if __name__ == "__main__":
+    main()
