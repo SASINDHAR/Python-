@@ -1,0 +1,14 @@
+def count_digits(number):
+    count = 0
+    while number > 0:
+        number //= 10
+        count += 1
+    return count
+
+def main():
+    number = int(input("Enter a number: "))
+    digit_count = count_digits(number)
+    print("Number of digits:", digit_count)
+
+if __name__ == "__main__":
+    main()
